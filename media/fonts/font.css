@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'ArcaMajora3-Heavy';
+  src: url('ArcaMajora3-Heavy.eot');
+  src: url('ArcaMajora3-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('ArcaMajora3-Heavy.svg#ArcaMajora3-Heavy') format('svg'),
+       url('ArcaMajora3-Heavy.ttf') format('truetype'),
+       url('ArcaMajora3-Heavy.woff') format('woff'),
+       url('ArcaMajora3-Heavy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
