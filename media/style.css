@@ -1,90 +1,62 @@
-/**
- *
- *
- */
+/* 
+* Developed By: Glen Mark Mananquil
+* Url: glenmananquil.github.io
+*
+*/
 
 *{
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, li{
+    margin: 0;
+    padding: 0;
 }
 
 a{
     text-decoration: none;
-    color: #000;
 }
 
-ul{
-    margin-left: -40px;
+:root{
+    --black: #000;
+    --white: #fff;
+    --magenta: #FF00FF;
+    --cyan: #00FFFF;
+    --green: #00FF00;
+    --yellow: #FFFF00;
 }
 
-li{
-    list-style: none;
-}
+.color-cyan{ color: var(--cyan);}
+.color-magenta{ color: var(--magenta);}
+.color-green{ color: var(--green);}
+.color-yellow{ color: var(--yellow);}
+
+
+
 
 body{
-    font-family: "ArcaMajora3-Heavy";
+    background: var(--black);
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Gemunu Libre', sans-serif;    
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-.left-sidebar{
-
-    background: linear-gradient(to right bottom, #000 50%, #fff 50%);
-    height: 800px;
-    padding: 20px;
-}
-.left-sidebar .title{
-    color: #FFF;
-    font-size: 2em;
-    line-height: 1.8em;
-}
-
-.left-sidebar .title span{
-    color: #2cfe49;
-}
-
-.left-sidebar img{
-    margin: 20px auto;
-}
-
-.left-sidebar nav{margin-top: 20px;}
-.left-sidebar nav a{
-    display: block;
-    color: #FFF;
-    font-size: 1.5em;
-    line-height: 2em;
-    vertical-align: middle;
-}
-
-.left-sidebar .right{
-    float: right;
-    margin-right: 50px;
-}
-
-.left-sidebar .right a{
-    cursor: pointer;
-}
-
-.left-sidebar .right p{
-    line-height: 2em;
-}
-
-.content{}
-.content .title{text-align: center;margin-top: 20px;}
-.content p{}
-.content p:before{
-    content:"{{";
+#intro{
     width: 100%;
-    line-height: 1em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    gap: 100px;
 }
 
+#intro .inner-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+}
 
-
-
-
-
+#intro h2{font-size: 5em;}
+#intro h4{font-size: 3em;}
+#intro h6{font-size: 2em;}
